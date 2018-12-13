@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/css/style.css">
+</head>
+<body>
+    <section id="cores">
+        <div class="row">
+                <div class="caixa cor"></div>
+                <div class="caixa bco"></div>
+                <div class="caixa cor"></div>
+                <div class="caixa bco"></div>
+                <div class="caixa cor"></div>
+                <div class="caixa bco"></div>
+                <div class="caixa cor"></div>
+                <div class="caixa bco"></div>
+                <div class="caixa cor"></div>
+                <div class="caixa bco"></div>
+        </div>
+        <div class="row">
+                <div class="caixa bco"></div>
+                    <div class="caixa cor"></div>
+                    <div class="caixa bco"></div>
+                    <div class="caixa cor"></div>
+                    <div class="caixa bco"></div>
+                    <div class="caixa cor"></div>
+                    <div class="caixa bco"></div>
+                    <div class="caixa cor"></div>
+                    <div class="caixa bco"></div>
+                    <div class="caixa cor"></div>
+        </div>
+        <div class="row mobile">
+                <div class="caixa cor"></div>
+                <div class="caixa bco"></div>
+                <div class="caixa cor"></div>
+                <div class="caixa bco"></div>
+                <div class="caixa cor"></div>
+                <div class="caixa bco"></div>
+                <div class="caixa cor"></div>
+                <div class="caixa bco"></div>
+                <div class="caixa cor"></div>
+                <div class="caixa bco"></div>
+        </div>
+        <div class="row mobile">
+                <div class="caixa bco"></div>
+                    <div class="caixa cor"></div>
+                    <div class="caixa bco"></div>
+                    <div class="caixa cor"></div>
+                    <div class="caixa bco"></div>
+                    <div class="caixa cor"></div>
+                    <div class="caixa bco"></div>
+                    <div class="caixa cor"></div>
+                    <div class="caixa bco"></div>
+                    <div class="caixa cor"></div>
+        </div>
+    </section>
+    <section id="titulo">
+        Teste
+    </section>
+    <section id="cores">
+            <div class="row">
+                    <div class="caixa cor">Teste</div>
+                    <div class="caixa bco"></div>
+                    <div class="caixa cor"></div>
+                    <div class="caixa bco"></div>
+                    <div class="caixa cor"></div>
+                    <div class="caixa bco"></div>
+                    <div class="caixa cor"></div>
+                    <div class="caixa bco"></div>
+                    <div class="caixa cor"></div>
+                    <div class="caixa bco"></div>
+            </div>
+            <div class="row">
+                    <div class="caixa bco"></div>
+                    <div class="caixa cor">a</div>
+                    <div class="caixa bco"></div>
+                    <div class="caixa cor"></div>
+                    <div class="caixa bco"></div>
+                    <div class="caixa cor"></div>
+                    <div class="caixa bco"></div>
+                    <div class="caixa cor"></div>
+                    <div class="caixa bco"></div>
+                    <div class="caixa cor"></div>
+            </div>
+            <div class="row mobile">
+                    <div class="caixa cor"></div>
+                    <div class="caixa bco"></div>
+                    <div class="caixa cor"></div>
+                    <div class="caixa bco"></div>
+                    <div class="caixa cor"></div>
+                    <div class="caixa bco"></div>
+                    <div class="caixa cor"></div>
+                    <div class="caixa bco"></div>
+                    <div class="caixa cor"></div>
+                    <div class="caixa bco"></div>
+            </div>
+            <div class="row mobile">
+                    <div class="caixa bco"></div>
+                        <div class="caixa cor"></div>
+                        <div class="caixa bco"></div>
+                        <div class="caixa cor"></div>
+                        <div class="caixa bco"></div>
+                        <div class="caixa cor"></div>
+                        <div class="caixa bco"></div>
+                        <div class="caixa cor"></div>
+                        <div class="caixa bco"></div>
+                        <div class="caixa cor"></div>
+            </div>
+        </section>
+    <script>
+        var divs = document.querySelectorAll('div.cor'), i;
+        var colors = ["#00904a", "#939193", "#233a7c", "#e74015", "#6e4080", "#2183c6", "#f1e515", "#f18f05"];
+        
+        setInterval(function() {
+        for (i = 0; i < divs.length; ++i) {
+            divs[i].style.backgroundColor = colors[Math.floor(colors.length * Math.random())];
+        }
+        }, 1000)
+
+        
+    </script>
+</body>
+</html>

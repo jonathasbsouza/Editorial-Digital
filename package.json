@@ -1,0 +1,19 @@
+{
+  "name": "editorial-digital",
+  "version": "1.0.0",
+  "description": "Flicts book, digital version",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite-server": "lite-server",
+    "start": "concurrently \"npm:lite-server\" \"gulp sass:watch\""
+  },
+  "author": "jonathas souza",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.2",
+    "lite-server": "^2.4.0"
+  }
+}
