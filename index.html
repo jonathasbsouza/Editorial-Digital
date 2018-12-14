@@ -119,16 +119,14 @@
             </div>
         </section>
     <script>
-        var divs = document.querySelectorAll('div.cor'), i;
+        var div1 = document.querySelectorAll('div.cor'), i;
         var colors = ["#00904a", "#939193", "#233a7c", "#e74015", "#6e4080", "#2183c6", "#f1e515", "#f18f05"];
 
         setInterval(function() {
-        for (i = 0; i < divs.length; ++i) {
-            divs[i].style.backgroundColor = colors[Math.floor(colors.length * Math.random())];
+        for (i = 0; i < div1.length; ++i) {
+            div1[i].style.backgroundColor = colors[Math.floor(colors.length * Math.random())];
         }
         }, 1000)
-
-        
     </script>
 </body>
 </html>
